@@ -19,7 +19,4 @@ MESSAGE(STATUS “src  third so path= ${third_path}”)
 #配置加载native依赖
 include_directories( ${ProjectRoot}/app/src/main/cpp/external/include )
 
-target_link_libraries(
-                       third
-                       native-lib
-                       ${log-lib} )
+target_link_libraries(native-lib third ${log-lib} )
